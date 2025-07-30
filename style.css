@@ -116,7 +116,7 @@ nav button{
 .nav-sec li{
     cursor: pointer;
     color: black;
-    transition: color, 0.3, ease;
+    transition: color 0.3 ease;
 }
 .nav-sec li:hover{
     color: #ccc ;

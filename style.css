@@ -1,0 +1,199 @@
+body{ 
+  background: linear-gradient(135deg, #1E3A8A, #6D28D9);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.2vw;
+}
+
+   
+
+
+
+
+
+
+
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    height: 80px; 
+    position: relative; 
+}
+
+
+
+.nav-sec{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    position: absolute;
+    right: 65px;
+    flex: 1;
+    
+    
+}
+
+nav button{
+     margin-left: auto; 
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+.search{
+   position: absolute;
+   
+}
+.search input{
+    min-width: 400px;
+    min-height: 30px;
+}
+.search button img{
+    height: 20px;
+    margin-top: 25px;
+
+}
+.logo{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+.logo p{
+    margin: 0;
+}
+
+.logo img{
+    height: 80px;
+    width: 80px;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    display: inline-block;
+}
+
+/* Hide menu by default */
+.menu-options {
+    display: none;
+    position: absolute;
+    top: 40px;  
+    right: 0;    
+    background: white;
+    list-style: none;
+    
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Show menu when button is focused */
+.menu:focus-within .menu-options {
+    display: block;
+}
+
+.menu-options li {
+    justify-content: flex-start;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu-options li:hover {
+    background: #f0f0f0;
+}
+.menu-options li{
+    white-space: nowrap;
+}
+.nav-sec li{
+    cursor: pointer;
+    color: black;
+    transition: color, 0.3, ease;
+}
+.nav-sec li:hover{
+    color: #ccc ;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 25px;
+    margin-left: 20px;
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.card{
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.1);
+    
+     
+}
+.card:hover{
+    opacity: 0.4;
+    transform: translateY(-10px);
+}
+
+
+.card img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.card button{
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color:#6D28D9;
+    transition: 1s ease;
+}
+.card button:hover{
+    background: #ccc;
+}
+.footer{
+    display: flex;
+    
+    gap: 30px;
+}
+@media (max-width:600px){
+.footer{
+    flex-direction: column;
+    gap: 15px;
+
+}
+}
+
+
+
+
+.icons{
+    display: flex;
+    gap: 15px;
+}
+
+@keyframes bounce {
+    0%, 100%{transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+}
+
+.icons img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    animation:bounce 2s 4;
+}
+

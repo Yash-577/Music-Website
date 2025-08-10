@@ -1,13 +1,21 @@
 body{ 
-  background: linear-gradient(135deg, #1E3A8A, #6D28D9);
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.2vw;
+background-color: #212121;
+color: white;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 1.2vw;
 }
 
-   
+body.dark-mode{
+    
+background-color: #f0f0f0;
+color: black;
+}
 
-
+#toggle{
+    border-radius: 50px;
+    color: black;
+}
 
 
 
@@ -37,6 +45,14 @@ nav{
     
     
 }
+
+
+#login {
+    display: none;
+}
+
+    
+
 
 nav button{
      margin-left: auto; 
@@ -115,8 +131,14 @@ nav button{
 }
 .nav-sec li{
     cursor: pointer;
-    color: black;
+    color: wheat;
     transition: color 0.3 ease;
+}
+.nav-sec li a{
+    color: wheat;
+}
+.nav-sec li a:hover{
+    color: #ccc ;
 }
 .nav-sec li:hover{
     color: #ccc ;
